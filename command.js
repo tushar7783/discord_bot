@@ -13,9 +13,7 @@ const love = [
     description: "reply love",
   },
 ];
-const rest = new REST({ version: "10" }).setToken(
-  "MTIwODY5NDA0NjYwNDkxODgyNA.G122_s.cOVUDcZ6DrMRMPwv0kj4fOUz04Bn2wbeunocbA"
-);
+const rest = new REST({ version: "10" }).setToken(process.env.TOKEN);
 
 (async () => {
   try {
